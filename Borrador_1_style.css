@@ -54,15 +54,15 @@ body{
 }
 #tit5{
   color: #F92374;
-  font-style: italic;
-  font-family: cursive;
+  font-style: initial;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #icon-menu{
   width: 28px;
   height: 28px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 16px;
   padding: 3px;
   font-size: 20px;
@@ -161,6 +161,12 @@ body{
     width: 100%;
   }
 @media screen and (max-width: 800px) {
+  .logo_main{
+    transition: all 300ms cubic-bezier(1,0,0,1);
+  }
+  .move-logo_main{
+    transform: translateX(325px);
+  }
   .container-all{
     transition: all 300ms cubic-bezier(1,0,0,1);
   }
@@ -171,7 +177,7 @@ body{
     width: 0px;
     height: 100vh;
     position: fixed;
-    top: 0px;
+    top: -60px;
     left: 0;
     background: #FFDC8E;
     overflow: hidden;
